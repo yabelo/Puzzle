@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#808080">
+
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/start_game"
+        android:background="@drawable/border"
+        app:backgroundTint="@null" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_gravity="bottom"
+        android:background="@color/Gray">
+
+        <ImageButton
+            android:id="@+id/profileBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/baseline_account_circle_24"
+            android:background="@color/Transparent"
+            android:layout_gravity="center|right"
+            tools:ignore="RtlHardcoded"
+            android:contentDescription="TODO" />
+
+        <ImageButton
+            android:id="@+id/homeBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/baseline_home_24"
+            android:background="@color/Transparent"
+            android:layout_gravity="center"
+            tools:ignore="RtlHardcoded"
+            android:contentDescription="TODO" />
+
+        <ImageButton
+            android:id="@+id/leaderboardBtn"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:src="@drawable/baseline_workspace_premium_24"
+            android:background="@color/Transparent"
+            android:layout_gravity="center|left"
+            tools:ignore="RtlHardcoded"
+            android:contentDescription="TODO" />
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+
+</FrameLayout>
